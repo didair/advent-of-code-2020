@@ -210,7 +210,6 @@ def findCombinationBySum(list, sum):
             for y in list:
                 if ((x + z + y) == sum):
                     return x * z * y;
-                    break;
 
                 else:
                     pass;
