@@ -201,16 +201,22 @@ expenses = [
     1715,
 ];
 
-# Iterate expenses in x and y
-def getMatching():
-    for x in expenses:
-        for y in expenses:
-            if x + y == 2020:
-                return x * y;
+def findCombinationBySum(list, sum):
+    list.sort()
+    size = len(list);
 
+    for x in list:
+        for z in expenses:
+            for y in expenses:
+                if ((x + z + y) == sum):
+                    return x * z * y;
+                    break;
+
+                else:
+                    pass;
 
 def day_one():
-    answer = getMatching();
+    answer = findCombinationBySum(expenses, 2020);
 
     print("Solution: " + str(answer));
 
