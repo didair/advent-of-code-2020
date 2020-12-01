@@ -206,8 +206,8 @@ def findCombinationBySum(list, sum):
     size = len(list);
 
     for x in list:
-        for z in expenses:
-            for y in expenses:
+        for z in list:
+            for y in list:
                 if ((x + z + y) == sum):
                     return x * z * y;
                     break;
