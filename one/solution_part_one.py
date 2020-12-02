@@ -1,3 +1,6 @@
+# Advent of Code 2020
+# Author: Andreas Ekström <didair>
+
 expenses = [
     1779,
     1737,
@@ -212,7 +215,9 @@ def getMatching():
 def day_one():
     answer = getMatching();
 
+    print("🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄");
     print("Solution: " + str(answer));
+    print("🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄🎄");
 
-## 24 days until christmas
+## 24 days until christmas 🎄🎄🎄🎄🎄
 day_one();
